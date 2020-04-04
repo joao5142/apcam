@@ -1,0 +1,221 @@
+/* Configuraçoes Cabeçalho e gerais */
+header{
+    background-image: url('../img/2.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    height: 100%;
+} 
+ 
+html,body{
+    font-family: Lato,sans-serif;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-size: 18px;
+    text-align: justify;
+
+
+     background-image: url(../img/3.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-attachment: fixed;
+}
+ 
+.borda{
+    border: 1px solid red;
+}
+
+/* Configurações menu navegação */
+ #inputPesquisar{
+     background-image: url("../img/icons8_search_50px_1.png");
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: right;
+      
+     color:gray;
+ }
+form#buscar{
+    width: 50%;
+    
+}
+ul li a{
+    color: white;
+    font-size: 17px;
+
+}
+ 
+ul li{
+     margin-left: 15px;;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+nav.navbar-light{
+    
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    border-bottom: 1px solid black;
+}
+nav.navbar{
+    text-align: center;
+      
+}
+.menuTraco{
+    border-left:1px solid black;
+    
+}
+
+.altura
+{
+    height: 100%;;
+}
+
+
+
+/* sections*/
+section{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    height: 100%;  
+ 
+}
+
+#noticias{
+    position: relative;
+}
+.caixaPosition{
+    text-align: right;
+    text-decoration: none;
+   
+}
+#noticias button{
+ 
+  margin: 15px auto;
+}
+ #noticias a{
+     text-decoration: underline;
+     
+ }
+#noticias .col-md-4{
+    padding: 25px;
+     
+}
+ 
+
+ .box2:hover{
+    box-shadow: 1px 1px 9px gray;
+
+    border-bottom: 2px solid black;
+    transition: 0.3s;
+ }
+ 
+ .box{
+    box-shadow: 0.3px 0.5px 0.2px gray;
+    transition: 0.5s;
+ }
+ .box:hover{
+     
+    box-shadow: 1px 1px 19px gray;
+ }
+ .box h1{
+     margin-bottom: 15px;
+ }
+ .box p{
+    margin-top: 15px;
+ }
+
+/* planos*/
+
+
+/* Section Contato */
+
+#imgContato{
+  transform: rotate(30deg);
+}
+
+#contato p{
+ padding: 30px;;
+}
+#contato h4{
+    margin-left: 10px;;
+}
+/* RODAPE */
+
+#rodape{
+ 
+	position: relative;
+	background: black;
+	padding:50px 0px 20px 0px;
+}
+
+footer h4,footer p{
+	color: #919496;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+footer .navbar-nav a{
+	color: white;
+	font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover{
+	color: #9bf0e1;
+	text-decoration: none;
+}
+footer div#sociais ul{
+ 
+	list-style-type: none;
+}
+footer div#sociais ul li{
+	float: right;
+	margin-left: 15px;
+	 
+}
+
+
+/*Media Querys*/
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    section{
+        height: auto;
+    }
+
+    form#buscar{
+        width: 90%;
+        z-index: 10;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover{
+        border-bottom: none;
+    }
+
+ }
+ 
+ /*// Small devices (landscape phones, 576px and up)*/
+ @media (min-width: 576px) and (max-width: 767.98px) {
+    section{
+        height: auto;
+    }
+  }
+ 
+  
+ /*// Medium devices (tablets, 768px and up)*/
+ @media (min-width: 768px) and (max-width: 991.98px) { 
+     
+   
+  }
+ 
+ /*// Large devices (desktops, 992px and up)*/
+ @media (min-width: 992px) and (max-width: 1199.98px) { 
+       
+ }
+ 
+ /*// Extra large devices (large desktops, 1200px and up)*/
+ @media (min-width: 1200px) { 
+ }

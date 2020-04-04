@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>APCAM Brasil</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <link rel="icon" href="img/logo.ico">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <!-- SCRIP PESSOAL -->
+    <script src="javascript/script.js"></script>
+
+
+    <script type="text/javascript">
+        $('.nav a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+            var id = $(this).attr('href'),
+                targetOffset = $(id).offset().top;
+
+            $('html, body').animate({
+                scrollTop: targetOffset - 100
+            }, 500);
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container">
+
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#ocultar">
+                    <span style="color:white;border: white"><i class="fas fa-bars fa-lg"></i></span>
+                </button>
+
+                <div id="ocultar" class="navbar-collapse collapse">
+
+                    <ul class="navbar-nav ml-auto  align-self-center">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">Quem somos</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Cursos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#noticias" class="nav-link">Notícias</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Contato</a>
+                        </li>
+
+                        <li class="nav-item menuTraco">
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="fab fa-facebook-f fa-lg"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="fab fa-instagram fa-lg"></i>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </nav>
+
+        <div style="height: 90%;">
+            <div style="height: 100%;" class="row d-flex align-items-center justify-content-center">
+                <div class="col-md-12 align-items-center">
+                    <form id="buscar" class="mt-auto mb-auto ml-auto mr-auto">
+                        <div class="input-group input-group-lg">
+
+                            <input type="text" name="" class="form-control" placeholder="O que você procura?">
+
+
+
+                            <div class="input-group-append" style="margin-left:10px;">
+                                <button type="button" class="btn btn-success">Pesquisar</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <section id="home" class="d-flex">
+        <!-- home -->
+        <div class="container align-self-center">
+            <!-- inicio container -->
+            <div class="row">
+                <!-- inicio row -->
+
+                <div class="col-md-4 d-flex">
+                    <!-- inicio coluna -->
+                    <img style="padding: 20px;" class="align-self-center" src="img/4.png" class="img-fluid"
+                        width="100%">
+
+                </div> <!-- fim coluna -->
+
+                <div class="col-md-8">
+                    <!-- inicio coluna -->
+                    <h1 class="">Quem Somos?</h1>
+                    <p>
+                        A Apcam Brasil é uma instituição de ensino comprometida com a formação de cidadãos que sonham em
+                        servir as forças armadas brasileira. A nossa trajetória começou há mais de 10 anos como
+                        instituição de ensino profissionalizante na grande João Pessoa/PB, vem crescendo cada vez mais
+                        em cursos preparatórios para concursos no segmento da carreira militar.
+
+                        Hoje a Apcam Brasil é uma das melhores academia de preparação a carreira militar, atende não só
+                        a grande João Pessoa/PB como também está presente em várias regiões no território Brasileiro.
+
+
+                        Missão: Formar cidadãos comprometidos e destinados aos quadros permanentes a carreira Militar.
+
+                        Visão: Ser referência na preparação e aprovação de jovens em concursos militares.
+
+                        Valores: Ética, Disciplina e Comprometimento.
+                    </p>
+
+
+                </div> <!-- fim coluna -->
+
+
+            </div> <!-- fim row -->
+        </div> <!-- fim container -->
+    </section>
+
+
+    <section id="planos" class="d-flex">
+        <!-- home -->
+        <div class="container align-self-center">
+            <!-- inicio container -->
+            <div class="row">
+                <!-- inicio row -->
+
+                <div class="col-md-4 box2">
+                    <!-- inicio coluna -->
+                    <div class="d-flex">
+
+                        <img class="ml-auto mr-auto" src="img/accusoft-brands.svg" width="80px">
+                    </div>
+
+                    <h5 style="text-align: center;" class="mt-2">Plano de Estudos</h5>
+                    <p>
+                        Com o Plano de Estudos exclusivo do preparatório ProMilitares, você consegue organizar seus
+                        estudos com foco nas matérias que mais importam.
+
+                    </p>
+
+
+                </div> <!-- fim coluna -->
+
+                <div class="col-md-4 box2">
+                    <!-- inicio coluna -->
+                    <div class="d-flex">
+                        <img class="ml-auto mr-auto" src="img/user-graduate-solid.svg" width="80px">
+                    </div>
+                    <h5 style="text-align: center;" class="mt-2">Ampla experiência</h5>
+
+                    <p>
+                        Com ampla experiência e professores especialistas em concursos militares, a redação no
+                        ProMilitares é um dos pilares para o seu sucesso na carreira milita
+                    </p>
+
+
+                </div> <!-- fim coluna -->
+
+
+                <div class="col-md-4 box2">
+                    <!-- inicio coluna -->
+                    <div class="d-flex">
+                        <img class="ml-auto mr-auto" src="img/desktop-solid.svg" width="80px">
+                    </div>
+
+                    <h5 style="text-align: center;" class="mt-2">Monitoramento</h5>
+
+                    <p>
+                        Monitorias ilimitadas, para que você consiga entender no detalhe, cada matéria que irá cair nas
+                        provas dos concursos militares, tudo no mesmo lugar.
+                    </p>
+
+
+                </div> <!-- fim coluna -->
+
+
+            </div> <!-- fim row -->
+        </div> <!-- fim container -->
+    </section>
+
+
+    <section id="noticias">
+
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <h1 style="text-align: center;">
+                    Notícias
+                </h1>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <!-- inicio row -->
+            <div class="col-md-4 box">
+                <!-- inicio coluna -->
+                <img src="img/colegio-naval.jpg" alt="" class="mb-4 img-fluid">
+                <div style="clear: both;"></div>
+                <span><span><i class="fas fa-calendar-alt"></i></span> jul 29, 2019 </span>
+
+                <h4 style="text-align: center;" class="">Tudo sobre o concurso do Colégio Naval?</h4>
+                <p>
+                    O Comando da Marinha, no uso de suas atribuições, torna pública a abertura de inscrições e
+                    estabelece normas específicas ao processo...
+                </p>
+
+                <div class="caixaPosition">
+                    <button class="btn btn-outline-success">Leia mais</button>
+
+                </div>
+
+
+            </div> <!-- fim coluna -->
+
+            <div class="col-md-4 box">
+                <!-- inicio coluna -->
+                <img src="img/militray-men-sky-diving-128880.jpg" alt="" class="mb-4 img-fluid">
+                <div style="clear: both;"></div>
+
+                <span><span><i class="fas fa-calendar-alt"></i></span> jul 29, 2019 </span>
+
+                <h4 style="text-align: center;">Serviço Militar Voluntário de Praças</h4>
+                <p>
+                    A hora é essa! Se você é concurseiro e ainda não tem ideia de tudo que representa uma carreira
+                    no Colégio Naval (CN), vem descobrir tudo o que você precisa saber sobre o CN!
+                </p>
+
+                <div style="clear: both;"></div>
+                <div class="caixaPosition">
+                    <button class="btn btn-outline-success">Leia mais</button>
+
+                </div>
+
+
+            </div> <!-- fim coluna -->
+
+
+            <div class="col-md-4 box">
+                <!-- inicio coluna -->
+                <img src="img/flight-sky-sunset-men-54098.jpg" alt="" class="mb-4 img-fluid">
+                <div style="clear: both;"></div>
+
+                <span><span><i class="fas fa-calendar-alt"></i></span> jul 29, 2019 </span>
+                <p>
+                    <h4 style="text-align: center;" class="">Tudo sobre o concurso do Colégio Naval?</h4>
+
+                    A Escola de Especialistas de Aeronáutica - EEAR, através do Comando da Aeronáutica, será
+
+                </p>
+
+                <div class="caixaPosition">
+                    <button class="btn btn-outline-success">Leia mais</button>
+                </div>
+            </div> <!-- fim coluna -->
+
+
+        </div> <!-- fim row -->
+
+
+    </section>
+
+
+    <section id="contato">
+
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <h1 style="text-align: center;">
+                    Contato
+                </h1>
+            </div>
+        </div>
+
+
+        <div class="row">
+
+
+            <div class="col-md-6">
+                <!-- inicio coluna -->
+                <div style="padding: 50px;">
+                    <i class="fas fa-map-marker-alt"></i> <h4 class="d-inline">Onde Estamos?</h4>
+                        
+
+                        <p>
+                            R. Manoel Lopes de Carvalho, 3741 - Cuiá, João Pessoa - PB, 58075-427
+                        </p>
+
+
+                        <i class="fas fa-phone"></i>
+                        <h4 class="d-inline">Telefone</h4>
+
+                        <p>
+                                Fone: (83) 3566-8736
+                                Whatsapp: (83) 99395-9204
+                        </p>
+
+
+
+                        <i class="far fa-envelope"></i>
+                        <h4 class="d-inline">Email</h4>
+
+                        <p>
+                            apcambrasil@outlook.com
+                        </p>
+                </div>
+
+
+
+            </div> <!-- fim coluna -->
+
+            <div class="col-md-6">
+                <!-- inicio coluna -->
+                <img  id="imgContato" style="padding: 20px; position: relative; bottom: 60px;"   src="img/2756310.png"
+                    class="img-fluid" width="100%">
+
+            </div> <!-- fim coluna -->
+
+
+        </div> <!-- fim row -->
+
+
+    </section>
+
+    <footer id="rodape">
+        <div class="container">
+            <div class="row">
+                <!-- Inicio Row -->
+
+                <div class="col-md-2" id="rodape1">
+                    <h4>Companhia</h4>
+                    <ul class="navbar-nav">
+                        <!-- <li>
+                            <a href="">Sobre</a>
+                        </li>
+
+                        <li>
+                            <a href="">Serviços</a>
+                        </li>
+
+
+                        <li>
+                            <a href="">Novidades</a>
+                        </li> -->
+
+                    </ul>
+
+                </div>
+
+                <div class="col-md-2">
+                    <h4>Categoria</h4>
+                    <ul class="navbar-nav">
+                        <li>
+                            <a href=""></a>
+                        </li>
+
+                        <li>
+                            <a href=""></a>
+                        </li>
+
+                        <li>
+                            <a href=""></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-2">
+                    <h4>Links Uteis</h4>
+                    <ul class="navbar-nav">
+                        <li>
+                            <a href=""></a>
+                        </li>
+
+                        <li>
+                            <a href=""></a>
+                        </li>
+
+                        <li>
+                            <a href=""></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-4" id="sociais">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- Fim Row -->
+
+            <div class="row" style="margin-top: 100px;">
+                <div class="col-md-12">
+                    <p style="text-align: center;  font:14px;">
+                        Copyright &copy APCAM Brasil
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
